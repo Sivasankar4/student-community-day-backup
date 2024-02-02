@@ -175,7 +175,7 @@ footer {
     /* Adjust this value to set the desired gap */
     flex-wrap: wrap;
     justify-content:center;
-    width: 100%;
+    width: 90%;
 }
 
 .speakers-wrapper {
@@ -249,7 +249,7 @@ footer {
     flex-wrap: wrap;
     /* Added to allow wrapping to the next line */
     justify-content:center;
-    width: 100%;
+    width: 90%;
 }
 
 .chief-guest-card {
@@ -701,7 +701,7 @@ a.myButton:focus {
 
 .day-toggle {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #day1 {
@@ -1124,53 +1124,19 @@ a {
     width: 100%;
 }
 
-/* table {
-    width: 98.5%;
-    border-collapse: collapse;
-    margin-left: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 2.651);
-
+.description{
+    color: orangered;
+    padding: 10px;
+    margin: 0;
+    font-weight:bolder;
+    
 }
 
-th,
-td {
-    border: 1.7px solid #ffffff;
-    padding: 5px;
-    text-align: left;
-    background-color: rgb(39, 39, 39);
-    color: rgb(255, 255, 255);
-} */
-
-/* th {
-    background-color: black;
-    padding: 20px;
-} */
-
-/* th:first-child,
-td:first-child {
-    width: 13%;
-} */
-
-/* th:first-child {
-    background-color: black;
-} */
-
-/* .timing {
-    background-color: rgb(58, 58, 58);
-} */
-
-/* .aiml {
-    background-color: rgb(19, 19, 44);
-} */
-
-/* .Serverless {
-    background-color: rgb(20, 44, 20);
-} */
-
-/* .dataops {
-    background-color: rgb(37, 16, 16);
-} */
+#chief-guest-agenda{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
 
 #student-line{
     color: red;
@@ -1180,32 +1146,33 @@ td:first-child {
 }
 
 table {
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    position: relative;
-    left: 25%;
 }
 
-th,
+
 td {
-    padding: 2px;
+    padding: 5px;
     text-align: center;
     font-size: 16px;
+    border: 0.5px solid whitesmoke;
+    background-color: #0e062bd3;
 }
 
 th {
-    background-color: #000000;
-    border: 1px solid gray;
-    padding: 10px;
+    background-color: #11012e;
+    border: 0.5px solid whitesmoke;
+    padding: 20px;
 }
 
 .timing {
-    background-color: #414141;
+    background-color: #000000;
     /* You can change this color */
     color: white;
     /* Text color for better visibility */
     white-space: nowrap;
+    padding: 10px;
 }
 
 #schedule{
@@ -1237,23 +1204,36 @@ th {
 
 @media only screen and (max-width: 600px) {
     table {
-        border: 0px solid #000000;
-        width:100%;
-        left: 0;
-    }
-
-    td {
         width: 100%;
-        text-align: left;
-        border-bottom: 0px solid #000000;
-        padding: 8px;
+        border: 0;
+        margin-bottom: 20px;
     }
 
+    td, th {
+        padding: 10px;
+        text-align: center;
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        border: 0.5px solid whitesmoke;
+        background-color: #0e062bd3;
+    }
+
+    th {
+        background-color: #11012e;
+    }
+
+    /* Optional: Make the table headers bold for better visibility */
+    th {
+        font-weight: bold;
+    }
     #schedule{
         padding : 0;
         width: 100%;
     }
 }
+
+
+    
+
 
 #tracks-container{
     display: flex;

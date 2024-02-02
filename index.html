@@ -338,19 +338,34 @@
             </div>
         </section>
 
-        <!-- <h2 class="topics">Conference Schedule</h2>
-        <section id="schedule">    
 
-            <div class="day-toggle">
-            <button onclick="showDay('day1')" id="day1Button" class="day-button selected" type="button">Day
-                        1</button>
-            <button onclick="showDay('day2')" id="day2Button" class="day-button" type="button">Day 2</button>
+
+        
+            <!-- <div class="day-toggle">
+                <button onclick="showDay('day1')" id="day1Button" class="day-button selected" type="button">Day
+                    1</button>
+                <button onclick="showDay('day2')" id="day2Button" class="day-button" type="button">Day 2</button>
             </div>
             <div id="day1" class="tracks-container">
-            <table>
+                <img src="day-1-agenda.jpg" alt="day1" class="agenda">
+            </div>
+            <div id="day2" class="tracks-container">
+                <img src="day-2-agenda.jpg" alt="day2" class="agenda">
+            </div> -->
+
+            <h2 class="topics">Conference Schedule</h2>
+            <section id="schedule">
+
+                <div class="day-toggle">
+                    <button onclick="showDay('day1')" id="day1Button" class="day-button selected" type="button">Day
+                        1</button>
+                    <button onclick="showDay('day2')" id="day2Button" class="day-button" type="button">Day 2</button>
+                </div>
+                <div id="day1" class="tracks-container">
+                    <table>
                         <tr>
-                            <th>Time</th>
-                            <th colspan="3"><b>Day 1</b></th>
+                            <th class="timing">Time</th>
+                            <th colspan="3" class="description"><b>Day 1</b></th>
 
                         </tr>
                         <tr>
@@ -359,107 +374,123 @@
                         </tr>
                         <tr>
                             <td class="timing">09.30 to 09.40 AM</td>
-                            <td colspan="3">Day 1 : Welcoming Note <br><b>Dr.Vaddi Seshagiri Rao</b><br>Principal <br>St. Joseph's College of Engineering</td>
+                            <td colspan="3"><p class="description">Day 1 : Welcoming Note </p><b>Dr.Vaddi Seshagiri Rao</b><br>Principal
+                                <br>St. Joseph's College of Engineering <br>
+                            </td>
                         </tr>
                         <tr>
                             <td class="timing">09.40 to 10.00 AM</td>
-                            <td colspan="3">Special Addressing <b><br>Raghul G</b>,<br>AWS Cloud Captain | AWS Cloud Club SJIT<br>About Placement Initiative | AWS Cloud at St.Joseph's<br></td>
+                            <td colspan="3"><p class="description">Special Addressing </p><b>Raghul G</b>,<br>AWS Cloud Captain | AWS Cloud
+                                Club SJIT<br><p class="description">About Placement Initiative | AWS Cloud at St.Joseph's</p></td>
                         </tr>
                         <tr>
                             <td class="timing">10.00 to 10.10 AM</td>
-                            <td colspan="3"><b>Chief Guest Inaugrating the AWS Cloud Club Conference</b><br>
-                                <div>
-                                    Mr. Kumara Raghavan <br>Head of Startup(India) <br>Amazon Web Services.
-                                </div>
-                                <div>
-                                    Dr.B.Babu Manoharan <br>Chairman <br>St.Joseph's Group of Institutions
-                                </div>
-                                <div>
-                                    Mr.B.Shashi Sekar
+                            <td colspan="3"><b><p class="description">Chief Guest Inaugrating the AWS Cloud Club Conference</p></b>
+                                <div id="chief-guest-agenda">
+                                    <div>
+                                        <p><b>Mr.Kumara Raghavan </b><br>Head of Startup(India) <br>Amazon Web Services.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><b>Dr.B.Babu Manoharan </b><br>Chairman <br>St.Joseph's Group of Institutions
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><b>Mr.B.Shashi Sekar </b><br> Managing Director <br>St.Joseph's Group of
+                                            Institutions</p>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="timing">10.00 to 10.50 AM</td>
-                            <td><b>Prabakaran Chandran</b><br>Senior ML Engineer <br>Informatica <br> Building Retrieval
-                                Augmented Genration with AWS OpenSearch Service</td>
-                            <td><b>Sridevi Murugayen</b><br>Director <br>Fidelity Investments <br>Topic not yet
-                                confirmed</td>
-                            <td><b>TBA</b><br>
+                            <td class="timing">10.10 to 10.40 AM</td>
+                            <td colspan="3">
+                                <p class="description">Chief Guest Addressing - AWS Cloud Club Conference Day 1 </p> <b>Mr. Kumara
+                                    Raghavan</b><br>Head of Startup(India) <br>Amazon Web Services <br>
                             </td>
                         </tr>
                         <tr>
-                            <td class="timing">10.50 to 11.40 AM</td>
-                            <td><b>Dheeraj Choudhary</b><br>Lead Systems Engineer <br>EPAM Systems <br>Revolutionize
-                                your coding experience with Amazon CodeWhisperer</td>
-                            <td><b>Hariharan</b><br>Senior Software Engineer <br>Caterpillar <br> charting the future: AWS
-                                Serverless Strategies for Success</td>
-                            <td><b>Rajinni Joshe</b><br>Cloud Security Consultant <br> Million Square Feet <br>Insights
-                                into AWS Encryption and GuardDuty Blueprint</td>
+                            <td class="timing">10.40 to 11.00 AM</td>
+                            <td colspan="3">Tea Break - 1 Morning Day 1</td>
                         </tr>
 
                         <tr>
-                            <td class="timing">11.40 to 12.30 PM</td>
-                            <td><b>Vijayalakshmi Bakthavachalam</b><br>Site Reliability Engineer <br>HCL technologies
-                                <br>Transforming IT Operations: Unleashing AI/ML Power on AWS
+                            <td class="timing"></td>
+                            <td><b>AI/ML Track</b></td>
+                            <td><b>Serverless Track / DataOps Trac</b></td>
+                            <td><b>Security / Career Guidance</b></td>
+                        </tr>
+
+                        <tr>
+                            <td class="timing">11.00 to 11.50 PM</td>
+                            <td><b>Sornavel Perumal</b><br>Senior Technical Account Manager <br>Amazon Web Services
+                                <br><br><b>Magesh Babu Puliyadi Kubendran</b><br>Senior Customer Solution Manager
+                                <br>Amazon Web Services
+                                <br><p class="description">How to improve and contextualize GenAI Responses using RAG and Bedrock</p>
                             </td>
-                            <td><b>Jones Zachariah Noel</b><br>Senior Developer Advocate <br>Freshworks <br>Building
-                                Serverless applications from your IDE with AWS Application composer</td>
-                            <td><b>Aditi Sawhney</b><br>Senior Digital Marketing <br> Manager <br> Amazon Web Services
-                                <br> Building Your Brand Blueprint: 7 Strategic steps for personal growth
-                            </td>
+
+                            <td><b>Bhuvana R </b><br>Software Product and Platform Engineering , Manager <br>Accuenture
+                                <br><p class="description">Accelerating Innovation : Journey through AWS Serverless Services</p></td>
+                            <td><b>Padmini Subramanian</b><br>Associate Vice President <br> JP Morgan <br><p class="description">Certify and Elevate : Charting Career success with AWS Global Certification</p></td>
                         </tr>
                         <tr>
-                            <td class="timing">12.30 to 01.40 PM</td>
-                            <td colspan="3"><b>Lunch Break</b></td>
+                            <td class="timing">11.50 to 12.40 PM</td>
+                            <td><b>Jen Looper</b><br>Head of Academic Advocacy <br>Amazon Web Services <br><p class="description">Ethics of
+                                AI</p></td>
+                            <td><b>Karthick AV</b><br>AWS Solutions Architect <br>RRD GO <br><p class="description">Creative getting
+                                Started with AWS Workspaces</p></td>
+                            <td><b>Bharath Kumar N</b><br>Security Consultant <br>Pearson <br><p class="description">Exploiting and
+                                Defending CI/CD Pipelines</p></td>
                         </tr>
+
+                        <tr>
+                            <td class="timing">12.40 to 01.40 PM</td>
+                            <td colspan="3">Lunch Break - Day 1</td>
+                        </tr>
+
                         <tr>
                             <td class="timing">01.40 to 02.30 PM</td>
-                            <td><b>Ayyanar Jeyakrishnan</b><br>Executive Director/Principal Engineer <br> Wells Fargo
-                                <br>Unleashing Machine Learning Magic Demystifying Amazon SageMaker Canvas for Student
-                                Innovators
-                            </td>
-                            <td><b>Sriharsha</b><br>Senior Solutions Architect <br>Amazon Web Services <br>Leveraging
-                                the Power of Machine Learning with Data Analytics</td>
-                            <td><b>Vishal Alhat</b><br>DevOps Lead <br>Forcepoint Software <br>Securing tomorrow:
-                                getting started with AWS and Cloud Security</td>
+                            <td><b>Deepak Sai Pandyala</b><br>Ex-Applied Scientist Intern <br>Amazon <br><p class="description">Beyond
+                                Language : The Rise of Generative AI from Transformer Foundations</p></td>
+                            <td><b>Aarthi Ranganathan</b><br>SecOps Consultant<br>Caterpillar<br><p class="description">Security in AWS
+                                Serverless</p></td>
+                            <td><b>Sankelp Sandeep Paranjpe</b><br>AWS Cloud Captain<br>MIT ADTU Pune<br><p class="description">Alert to
+                                Action : Introduction to AWS Security Incident Response</p></td>
                         </tr>
                         <tr>
                             <td class="timing">02.30 to 03.20 PM</td>
-                            <td><b>Abishek Subramanian</b>,<br>Senior Technical Solutions Engineer<br>Databricks
-                                <br>Crafting Intelligence with LLM on Databricks in AWS
-                            </td>
-                            <td><b>Giri Venkatesan</b><br>Developer Advocate <br>Solace <br>Navigating the Cloud: A journey
-                                through System design, Architecture, and Event Driven Paradigms</td>
-                            <td><b>Sabarinath Shanmugasundaram</b><br>Public Cloud Architect <br>Hitachi Vantara
-                                <br>Guardians of the Cloud: Fortifying AWS Security Strategies
-                            </td>
+                            <td><b>Chirag Oswal </b><br>partner Solutions Architect <br>Amazon Web Services
+                                <br><p class="description">Demustifying generative AI on AWS</p></td>
+                            <td><b>Murali Doss</b><br>DevOps Lead <br>Comcast Data <br><p class="description">Orchestration Odyssey :
+                                Navigating Tomorrow's Digital Symphony with AWS DataZone</p></td>
+                            <td><b>Jen Looper</b><br>Head of AWS Advocacy Team <br>Amazon Web Services <br><br><b>Aditi
+                                    Sawhney </b><br>Senior Digital Marketing Manager <br>Amazon Web Services <br><p class="description">Two
+                                        Journeys One Cloud Career Pathways</p></td>
                         </tr>
                         <tr>
                             <td class="timing">03.20 to 03.40 PM</td>
-                            <td colspan="3"><b>Tea Break - 2</b></td>
-                        </tr>
-                        <tr>
-                            <td class="timing">03.40 to 04.30 PM</td>
-                            <td colspan="3">Panel Discussion - Day 2 <br><b>4 panel Members | 1 Panel Host</b> <br> Panel
-                                Title: Ethics in AI? What is going to be the future of Generative AI in technological
-                                world? <br><b>Panel Host: 1.Jen Looper - Head of AWS Advocacy Team, Developer Relations at
-                                    Amazon Web Services </b><br><b>Panel Members: 2.Barathi Ganesh Hullathy Balakrishnan - Head of
-                                        Research and Development - RGB.AI</b></td>
+                            <td colspan="3">Tea Break - 2 Day 1</td>
 
                         </tr>
+
                         <tr>
-                            <td class="timing">04.30 to 04.40 PM</td>
-                            <td colspan="3">Winners announcing for Gen AI Competition</td>
+                            <td class="timing">03.40 to 04.30 PM</td>
+                            <td colspan="3"><b>Panel Discussion - Day 1</b><br><br><b>Topic : </b><p class="description">What will be the
+                                oppurtunities in the next Decade ? What do students and early career professionals need
+                                to follow to pursue an excellent career ?</p> <b>Panel Host : </b>Karthigeyan - Head
+                                of Product Security , Logitech <br><br><b>Panel Members : </b>
+                                <ul>
+                                    <li>Karthick, Associate General Manager, HCL</li>
+                                    <li>Mohan Kumar - Manager, Information Security, Freshworks</li>
+                                    <li>Pradeep Kumar Pandurangan, Project Manager, Security Testing, Polaris Cosulting
+                                    </li>
+                                    <li>Rakesh Elamaran, Security Engineer, Comcast</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="timing">04.40 to 05.00 PM</td>
-                            <td colspan="3">Vote of Thanks and Thanks Giving <br><b>Raghul G</b><br>AWS Cloud Captain |
-                                AWS Cloud Club SJIT</td>
-                        </tr>
-                        <tr>
-                            <td class="timing">05.00 to 05.30 PM</td>
-                            <td colspan="3">Goodies Distribution</td>
+                            <td class="timing">04.30 to 05.00 PM</td>
+                            <td colspan="3">End Of Day 1</td>
                         </tr>
                     </table>
 
@@ -510,7 +541,8 @@
                             <td class="timing">10.50 to 11.40 AM</td>
                             <td><b>Dheeraj Choudhary</b><br>Lead Systems Engineer <br>EPAM Systems <br>Revolutionize
                                 your coding experience with Amazon CodeWhisperer</td>
-                            <td><b>Hariharan</b><br>Senior Software Engineer <br>Caterpillar <br> charting the future: AWS
+                            <td><b>Hariharan</b><br>Senior Software Engineer <br>Caterpillar <br> charting the future:
+                                AWS
                                 Serverless Strategies for Success</td>
                             <td><b>Rajinni Joshe</b><br>Cloud Security Consultant <br> Million Square Feet <br>Insights
                                 into AWS Encryption and GuardDuty Blueprint</td>
@@ -547,7 +579,8 @@
                             <td><b>Abishek Subramanian</b>,<br>Senior Technical Solutions Engineer<br>Databricks
                                 <br>Crafting Intelligence with LLM on Databricks in AWS
                             </td>
-                            <td><b>Giri Venkatesan</b><br>Developer Advocate <br>Solace <br>Navigating the Cloud: A journey
+                            <td><b>Giri Venkatesan</b><br>Developer Advocate <br>Solace <br>Navigating the Cloud: A
+                                journey
                                 through System design, Architecture, and Event Driven Paradigms</td>
                             <td><b>Sabarinath Shanmugasundaram</b><br>Public Cloud Architect <br>Hitachi Vantara
                                 <br>Guardians of the Cloud: Fortifying AWS Security Strategies
@@ -581,22 +614,10 @@
                         </tr>
                     </table>
 
-            </div>
-        </section> -->
+                </div>
+            </section>
 
-        <section id="schedule">
-            <div class="day-toggle">
-                <button onclick="showDay('day1')" id="day1Button" class="day-button selected" type="button">Day
-                    1</button>
-                <button onclick="showDay('day2')" id="day2Button" class="day-button" type="button">Day 2</button>
-            </div>
-            <div id="day1" class="tracks-container">
-                <img src="day-1-agenda.jpg" alt="day1" class="agenda">
-            </div>
-            <div id="day2" class="tracks-container">
-                <img src="day-2-agenda.jpg" alt="day2" class="agenda">
-            </div>
-        </section>
+
 
         <h2 class="topics">Chief Guests</h2><br>
 
@@ -607,12 +628,12 @@
                     <h3 class="card-gap">Kumara Raghavan</h3>
                     <p class="card-gap">Head of Startup (India) <br>Amazon Web Services</p>
                     <a href="https://www.linkedin.com/in/kumararaghavan/" target="blank" rel="noopener"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="linkedin" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
-                    </svg>
-                </a>
+                            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -1199,7 +1220,7 @@
 
         </section>
         <section id="register">
-            <h2 class="topics" > Registration Link </h2>
+            <h2 class="topics"> Registration Link </h2>
             <br>
             <div class="ticket">
                 <div class="sponsor-card">
@@ -1308,7 +1329,7 @@
 
 
         <h2 class="topics">Venue</h2>
-        
+
         <section id="venue">
 
             <div id="map">
